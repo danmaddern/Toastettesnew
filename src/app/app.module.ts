@@ -12,6 +12,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { EmailComponent } from './email/email.component';
+import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { OrdernowComponent } from './ordernow/ordernow.component';
 
 
 
@@ -19,6 +25,12 @@ import {MatGridListModule} from '@angular/material/grid-list';
   declarations: [
     AppComponent,
     LayoutComponent,
+    EmailComponent,
+    MenuComponent,
+    FooterComponent,
+    GalleryComponent,
+    ContactusComponent,
+    OrdernowComponent,
 
   ],
   imports: [
