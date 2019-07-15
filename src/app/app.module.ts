@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { OrdernowComponent } from './ordernow/ordernow.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -31,6 +32,7 @@ import { OrdernowComponent } from './ordernow/ordernow.component';
     GalleryComponent,
     ContactusComponent,
     OrdernowComponent,
+    HomeComponent,
 
   ],
   imports: [

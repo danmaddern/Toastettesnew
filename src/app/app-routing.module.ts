@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
-
+import { HomeComponent } from './home/home.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
-  {
-    path:'',component:LayoutComponent
-  }
+  { path: '', component: HomeComponent },
+  { path: 'contact', component: ContactusComponent }
 ];
 
 @NgModule({
