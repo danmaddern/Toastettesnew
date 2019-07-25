@@ -1,4 +1,4 @@
-<mat-grid-list cols="6" rowHeight="fit" style="height:100%;width:100%">
+ <mat-grid-list cols="6" rowHeight="fit" style="height:100%;width:100%">  
     <mat-grid-tile class="home_tile" *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background-image]="tile.backgroundImageUrl"
         (click)="tileClicked(tile) ">
         {{tile.text}}

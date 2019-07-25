@@ -1,86 +1,32 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-     
-    <!-- Brand and toggle get grouped for better mobile display -->
-          <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="background">
-      <ul class="nav navbar-nav">
-      </ul>
-      </div>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
-            <span id="iconsize" class="glyphicon glyphicon-menu-hamburger"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-         
-        <a class="navbar-brand mx-auto" href="#">
-          <img id="navpic" src="assets/Toastettes-blackoutline-01.jpg">
-         
-        </a>
-        </li>
-    
-      
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    mode="over" opened="false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['']">Home</a>
+      <a mat-list-item [routerLink]="['/contact']">Contact Us</a>
+      <a mat-list-item [routerLink]="['/about']">Our Story</a>
+      <a mat-list-item [routerLink]="['/menu']">Our Menu</a>
+      <a mat-list-item [routerLink]="['/location']">Our Location</a>
+      <a mat-list-item [routerLink]="['/gallery']">Gallery</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span class="test1">Toastettes</span>
+    </mat-toolbar>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto&display=swap" rel="stylesheet">
 
 
+    <!-- Add Content Here -->
+    <div [@routeAnimations]="prepareRoute(outlet)" >
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
 
-  </div><!-- /.container-fluid -->
-</nav>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-
-<!-- <div class="container-fluid"> -->
-<div class="grid-container">
-      <div class="row no-gutter">
-          <div class="col-xs-12 col-md-6 col-sm-6"><img src="assets/Top Left.jpg"></div>
-          <div class="col-xs-12 col-md-6 col-sm-6"><img src="assets/Top Right.jpg"></div>
-      </div>
-      <div class="row no-gutter">
-          <div class="col-xs-12 col-md-4 col-sm-4"><img src="assets/Bottom Right.jpg"></div>
-          <div class="col-xs-12 col-md-4 col-sm-4"><img src="assets/Bottom Right.jpg"></div>
-     
-          <div class="col-xs-12 col-md-4 col-sm-4"><img src="assets/Bottom Right.jpg"></div>
-      </div>
-</div>
-
-
-
-
-
-<form class="form-inline">
-    
-       
-            <img class="picnews" src="assets/Website-Epic-Style-V2_09.png">
-            <div class="but">
-               <label for="exampleInputEmail2"></label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="enter email address">
-     
-            <button type="submit" class="btn btn-default">Submit</button>
-              
-            </div>
-
-  
-</form>
-
-
-<footer>
-  <div>
-    <img id="footerpic" src="">
-    <p id="copy">2019 Toastettes Copyright</p>
-    
-  </div>
-  
-</footer>
-
-
-
-
-<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>  -->

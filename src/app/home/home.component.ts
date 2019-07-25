@@ -16,22 +16,28 @@ export interface Tile {
 })
 export class HomeComponent implements OnInit {
   tiles: Tile[] = [
-    { text: 'One', cols: 3, rows: 1, backgroundImageUrl: 'url("/assets/topleft.jpg")', link: '/something' },
-    { text: 'Two', cols: 3, rows: 1, backgroundImageUrl: 'url("/assets/topright.jpg")', link: '/something' },
-    { text: 'Three', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomleft.jpg")', link: '/something' },
-    { text: 'Four', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomcenter.jpg")', link: '/something' },
-    { text: 'Four', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomright.jpg")', link: '/something' },
+    { text: 'Our Story', cols: 3, rows: 1, backgroundImageUrl: 'url("/assets/topleft.jpg")', link: '/about' , },
+    { text: 'Menu', cols: 3, rows: 1, backgroundImageUrl: 'url("/assets/topright.jpg")', link: '/menu' },
+    { text: 'Gallery', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomleft.jpg")', link: '/home' },
+    { text: 'Contact', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomcenter.jpg")', link: '/contact' },
+    { text: 'Our Location', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomright.jpg")', link: '/location' },
   ];
-  constructor(private router: Router) { }
+  breakpoint: number;
 
-  ngOnInit() {
-  }
+  constructor(private router: Router) { }
 
   tileClicked(tile: Tile) {
     console.log(tile.text);
 
-    //or navigation but fix up link values first
-    //this.router.navigate([tile.link]);
+    // or navigation but fix up link values first
+    this.router.navigate([tile.link]);
+  }
+  ngOnInit() {
+    this.breakpoint = (window.innerWidth <= 600) ? 1 : 6;
+  }
+
+  onResize(event) {
+  this.breakpoint = (event.target.innerWidth <= 600) ? 1 : 6;
   }
 
 }
