@@ -1,0 +1,55 @@
+%text-effects {
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+.container {
+  background-color: #F16464;
+}
+.menu-image-container {
+  width: 25%;
+}
+
+.menus {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2%;
+  background-color: #F16464;
+}
+
+.home-tile {
+  width: 100%;
+}
+
+.floating-title {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  right: 0;
+  @extend %text-effects;
+}
+
+.block-title {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(.8, .8, .8, .4) !important;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 800;
+}
+
+.block-image {
+  background-size: contain;
+  background: url(../../assets/topleft.jpg) no-repeat center;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+}

@@ -16,11 +16,11 @@ export interface Tile {
 })
 export class HomeComponent implements OnInit {
   tiles: Tile[] = [
-    { text: 'Our Story', cols: 3, rows: 1, backgroundImageUrl: 'url("/assets/topleft.jpg")', link: '/about' , },
-    { text: 'Menu', cols: 3, rows: 1, backgroundImageUrl: 'url("/assets/topright.jpg")', link: '/menu' },
+    { text: 'Our Story', cols: 4, rows: 1, backgroundImageUrl: 'url("/assets/topleft.jpg")', link: '/about' , },
+    { text: 'Menu', cols: 4, rows: 1, backgroundImageUrl: 'url("/assets/topright.jpg")', link: '/menu' },
     { text: 'Gallery', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomleft.jpg")', link: '/home' },
     { text: 'Contact', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomcenter.jpg")', link: '/contact' },
-    { text: 'Our Location', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomright.jpg")', link: '/location' },
+    { text: 'Our Location', cols: 4, rows: 1, backgroundImageUrl: 'url("/assets/bottomright.jpg")', link: '/location' },
   ];
   breakpoint: number;
 

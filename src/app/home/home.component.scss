@@ -3,3 +3,13 @@
     background-size: cover;
     background-repeat: no-repeat
 }
+%text-effects {
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+.text-title {
+  @extend %text-effects;
+}

@@ -1,41 +1,45 @@
-.header
-{
-    color: red;
-font-family: 'Luckiest Guy', cursive;
-size: 20%;
-align-content: center;
-text-align: Justify;
+$red-color: #F16464;
+$red-color-1: #EF463B;
+$red-color-2: #EE3124;
+$red-color-3: #EF463B;
+$yellow-color-0: #FFCC33;
+.container {
+  color: white;
 }
-
-.topstory
-{
-    color: rgb(255, 230, 0);
-font-family: 'Luckiest Guy', cursive;
-size:20%;
-align-content: center;
-text-align: Justify;
-text-align: center;
+.head-image {
+  max-height: 120px;
+  width: 100%;
 }
-
-.midstory
-{
-    color: rgb(255, 230, 0);
-    align-content: center;
-    text-align: Justify;
-    text-align: center;
+.red-0 {
+  background-color: $red-color;
 }
-
-.bottomstory
-{
-    color: rgb(255, 230, 0);
-    align-content: center;
-    text-align: Justify;
-    text-align: center;
+.red-1 {
+  background-color: $red-color-1;
 }
-
-.lasttext
-{
-    color: rgb(255, 230, 0);
-    text-align: Justify;
-    text-align: center;
+.red-2 {
+  background-color: $red-color-2;
+}
+.red-3 {
+  background-color: $red-color-3;
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding: 5%;
+  text-align: center;
+}
+.text-with-inner-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+  .menulink {
+    background-color: $yellow-color-0;
+    padding: 1%;
+    font-size: 30px;
+    font-weight: 800;
+    border-bottom: 4px inset #A8810B;
+  }
 }

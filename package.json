@@ -23,6 +23,7 @@
     "@angular/router": "~8.1.1",
     "@ngx-gallery/lightbox": "^4.0.3",
     "@types/googlemaps": "^3.37.0",
+    "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "ngx-gallery": "^5.10.0",
     "ngx-image-gallery": "^1.3.1",

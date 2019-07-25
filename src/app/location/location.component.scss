@@ -1,0 +1,20 @@
+app-location {
+}
+.head-image {
+  max-height: 120px;
+  width: 100%;
+}
+.map-and-text-container {
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  #map {
+    width: 50%;
+    height:400px;
+  }
+  .map-description {
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
