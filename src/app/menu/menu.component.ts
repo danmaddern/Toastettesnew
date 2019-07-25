@@ -17,11 +17,11 @@ export interface MenuTile {
 
 export class MenuComponent implements OnInit {
   tiles: MenuTile[] = [
-    { text: 'Cheese & Hamm', cols: 3, rows: 1, backgroundImageUrl: 'url("/assets/topleft.jpg")'},
-    { text: 'Lamb & Pea', cols: 3, rows: 1, backgroundImageUrl: 'url("/assets/topright.jpg")'},
-    { text: 'Three', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomleft.jpg")'},
-    { text: 'Four', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomcenter.jpg")'},
-    { text: 'Four', cols: 2, rows: 1, backgroundImageUrl: 'url("/assets/bottomright.jpg")'},
+    { text: 'THE CLASSICS', cols: 2, rows: 1, backgroundImageUrl: '../../assets/topleft.jpg'},
+    { text: 'ANY TIME ALL STARS', cols: 3, rows: 2, backgroundImageUrl: '../../assets/topleft.jpg'},
+    { text: 'SWEETS & TREATS', cols: 3, rows: 1, backgroundImageUrl: '../../assets/topleft.jpg'},
+    { text: 'Four', cols: 2, rows: 1, backgroundImageUrl: '../../assets/topleft.jpg'},
+    { text: 'Four', cols: 2, rows: 1, backgroundImageUrl: '../../assets/topleft.jpg'},
   ];
   breakpoint: number;
 
@@ -32,7 +32,6 @@ export class MenuComponent implements OnInit {
 
     // or navigation but fix up link values first
     this.router.navigate([tile.link]); */
-  
   ngOnInit() {
     this.breakpoint = (window.innerWidth <= 400) ? 1 : 6;
   }

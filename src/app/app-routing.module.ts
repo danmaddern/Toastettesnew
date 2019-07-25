@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 /* import { GalleryComponent } from './gallery/gallery.component'; */
 import { LocationComponent } from './location/location.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
 
@@ -19,8 +20,7 @@ const routes: Routes = [
                  },
   { path: 'about', component: AboutComponent
                 },
-/*   { path : 'gallery', component: GalleryComponent */
-              /*   }, */
+  { path : 'gallery', component: GalleryComponent},
  { path : 'location' , component: LocationComponent
                 }
 ];

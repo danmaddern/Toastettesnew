@@ -20,6 +20,10 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { LocationComponent } from './location/location.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import {NgxGalleryModule} from 'ngx-gallery';
+import {SharedModule} from './shared/shared.module';
+
 /* import { GalleryModule } from '@ngx-gallery/core'; */
 /* import { LightboxModule } from 'ngx-lightbox';
 import {GallerizeModule} from '@ngx-gallery/gallerize'; */
@@ -45,8 +49,8 @@ export class MaterialModule { }
     HomeComponent,
     AboutComponent,
     LocationComponent,
-    /* LightboxModule,
-    GallerizeModule */
+    GalleryComponent,
+    /* LightboxModule, GallerizeModule */
 
   ],
   imports: [
@@ -60,7 +64,8 @@ export class MaterialModule { }
     MatIconModule,
     MatListModule,
     MatGridListModule,
-
+    NgxGalleryModule,
+    SharedModule,
   ],
 
   providers: [],

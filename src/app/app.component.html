@@ -3,12 +3,12 @@
     mode="over" opened="false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['']">Home</a>
-      <a mat-list-item [routerLink]="['/contact']">Contact Us</a>
-      <a mat-list-item [routerLink]="['/about']">Our Story</a>
-      <a mat-list-item [routerLink]="['/menu']">Our Menu</a>
-      <a mat-list-item [routerLink]="['/location']">Our Location</a>
-      <a mat-list-item [routerLink]="['/gallery']">Gallery</a>
+      <a mat-list-item (click)="drawer.toggle()" [routerLink]="['']">Home</a>
+      <a mat-list-item (click)="drawer.toggle()" [routerLink]="['/contact']">Contact Us</a>
+      <a mat-list-item (click)="drawer.toggle()" [routerLink]="['/about']">Our Story</a>
+      <a mat-list-item (click)="drawer.toggle()" [routerLink]="['/menu']">Our Menu</a>
+      <a mat-list-item (click)="drawer.toggle()" [routerLink]="['/location']">Our Location</a>
+      <a mat-list-item (click)="drawer.toggle()" [routerLink]="['/gallery']">Gallery</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
