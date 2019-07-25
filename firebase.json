@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "site":"toastettes",
+    "public": "dist/Toastettes",
+    
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,1 +1,8 @@
-<p>menu works!</p>
+
+<img src='/src/assets/working-site-5Internet_02.gif'>
+
+    <mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
+    <mat-grid-tile class="home_tile" *ngFor="let tile of tiles" [colspan]="4" [rowspan]="4" [style.background-image]="tile.backgroundImageUrl">
+        {{tile.text}}
+    </mat-grid-tile>
+</mat-grid-list>

@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav-container">
+<!-- <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     mode="over" opened="false">
     <mat-toolbar>Menu</mat-toolbar>
@@ -13,12 +13,16 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Toastettes</span>
+      <span class="firebHeader1">Toastettes</span>
     </mat-toolbar>
 
 
-    <!-- Add Content Here -->
-    <router-outlet></router-outlet>
+    Add Content Here 
+     <div [@myAnimation]="o && o.activatedRouteData 
+    && o.activatedRouteData['animation']">
+  <router-outlet #o="outlet"></router-outlet>
+</div>
 
+    <app-footer></app-footer>
   </mat-sidenav-content>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
